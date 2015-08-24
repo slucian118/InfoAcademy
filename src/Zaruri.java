@@ -11,7 +11,7 @@ public class Zaruri {
 
     }
     public static void MulteAruncari() {
-        int nr_aruncari=20;
+        int nr_aruncari=40;
         int [][] rez=new int[nr_aruncari][];
         for (int i=0;i<nr_aruncari;i++)
         {
@@ -34,8 +34,13 @@ public class Zaruri {
             }
 
         }
-        System.out.println(duble);
-        System.out.println(porti);
+        System.out.println("Numar aruncari: "+nr_aruncari);
+        System.out.println("Numar duble: "+duble);
+        System.out.println("Numar porti: " +porti);
+        System.out.println("-----------------------------------------");
+        System.out.println("STATISTICI: " + duble + " duble, " + porti + " porti in casa");
+        System.out.println("Procent duble: " + (int) ((float) duble / rez.length * 100)+"%");
+        System.out.println("Procent porti: " + (int) ((float) porti / rez.length * 100)+"%");
     }
 
 
